@@ -9,9 +9,9 @@ def selection_sort(array):
 	return array
 
 def get_numbers(count, stop):
-	return rand.choices(range(stop), k=count)
+    return rand.choices(range(stop), k=count)
 
-nums = get_numbers(10, 20)
+nums = get_numbers(10000, 1000)
 print('Not sorted:', nums)
 sorted_nums = selection_sort(nums)
 print('Sorted numbers:', sorted_nums)
